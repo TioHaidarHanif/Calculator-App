@@ -1,0 +1,14 @@
+@startuml
+actor User
+participant "Calculator UI" as UI
+participant "JavaScript" as JS
+
+User -> UI : Clicks number button
+UI -> JS : Updates display with number
+User -> UI : Clicks operator button
+UI -> JS : Updates display with operator
+User -> UI : Clicks equal button
+UI -> JS : Performs calculation
+JS -> UI : Updates display with result
+
+@enduml

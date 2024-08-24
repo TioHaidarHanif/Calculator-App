@@ -1,0 +1,15 @@
+@startuml
+actor User
+
+usecase "Input Number" as UC1
+usecase "Select Operator" as UC2
+usecase "Perform Calculation" as UC3
+usecase "Clear Input" as UC4
+usecase "Handle Errors" as UC5
+
+User --> UC1 : Inputs digits
+User --> UC2 : Chooses +, -, *, /
+User --> UC3 : Presses '='
+User --> UC4 : Presses 'C'
+UC5 ..> UC3 : <<extends>> Shows error when needed
+@enduml

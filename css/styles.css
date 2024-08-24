@@ -1,0 +1,27 @@
+body.light-mode {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+body.dark-mode {
+    background-color: #263238;
+    color: #a5d6a7;
+}
+
+.navbar-light-mode {
+    background-color: #2e7d32 !important;
+}
+
+.navbar-dark-mode {
+    background-color: #1b5e20 !important;
+}
+
+.btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #2e7d32;
+}

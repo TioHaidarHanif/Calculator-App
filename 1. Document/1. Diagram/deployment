@@ -1,0 +1,14 @@
+@startuml
+node "User's Browser" {
+    component HTML
+    component CSS
+    component JavaScript
+    component ServiceWorker
+}
+
+HTML --> JavaScript : "Interacts"
+CSS --> HTML : "Styles"
+ServiceWorker --> HTML : "Caches"
+ServiceWorker --> JavaScript : "Caches"
+
+@enduml

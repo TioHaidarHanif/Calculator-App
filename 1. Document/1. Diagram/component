@@ -1,0 +1,21 @@
+@startuml
+!define RECTANGLE class
+RECTANGLE HTML {
+    + <div> Structure
+}
+RECTANGLE CSS {
+    + Styling
+}
+RECTANGLE JavaScript {
+    + Logic
+}
+RECTANGLE ServiceWorker {
+    + Offline support
+}
+
+HTML --> JavaScript : "Uses"
+CSS --> HTML : "Styles"
+ServiceWorker --> HTML : "Caches"
+ServiceWorker --> JavaScript : "Caches"
+
+@enduml

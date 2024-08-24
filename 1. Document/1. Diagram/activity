@@ -1,0 +1,10 @@
+@startuml
+start
+:User inputs number;
+:User inputs operator;
+:User inputs another number;
+:User presses "=";
+:Perform calculation;
+:Display result;
+stop
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+class Calculator {
+    + display: String
+    + input: String
+    + add(a: Number, b: Number): Number
+    + subtract(a: Number, b: Number): Number
+    + multiply(a: Number, b: Number): Number
+    + divide(a: Number, b: Number): Number
+    + handleInput(input: String): void
+    + calculate(): Number
+}
+
+@enduml
